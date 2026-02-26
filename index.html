@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wan Amirul Afiq · resume (single column)</title>
-    <!-- Professional single‑column layout, clean sans‑serif -->
+    <title>Wan Amirul Afiq · resume (single column, clean)</title>
+    <!-- completely single column, no left/right, no footer, just the facts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         }
 
         body {
-            background: #d9e0e9;
+            background: #dfe5ed;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             display: flex;
             justify-content: center;
@@ -26,23 +26,23 @@
             line-height: 1.5;
         }
 
-        .resume-card {
+        .paper {
             max-width: 860px;
             width: 100%;
             background: white;
             border-radius: 8px;
-            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
             overflow: hidden;
         }
 
-        /* header section */
-        .header {
+        /* header – dark */
+        .top {
             background: #0e2a41;
             color: white;
             padding: 2rem 2.5rem 1.5rem 2.5rem;
         }
 
-        .header h1 {
+        .top h1 {
             font-size: 2.4rem;
             font-weight: 600;
             letter-spacing: -0.5px;
@@ -50,7 +50,7 @@
             line-height: 1.2;
         }
 
-        .contact-row {
+        .contact {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
@@ -59,15 +59,15 @@
             margin-top: 0.3rem;
         }
 
-        .contact-row span {
+        .contact span {
             display: inline-flex;
             align-items: center;
             gap: 6px;
         }
 
-        /* main content */
-        .content {
-            padding: 2.2rem 2.5rem 2rem 2.5rem;
+        /* main content – stacked, no columns */
+        .main {
+            padding: 2.2rem 2.5rem 2.5rem 2.5rem;
         }
 
         .section {
@@ -84,7 +84,6 @@
             letter-spacing: 0.3px;
         }
 
-        /* entries */
         .entry {
             margin-bottom: 1.8rem;
         }
@@ -110,15 +109,15 @@
         .entry-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.2rem;
+            gap: 1rem;
             font-size: 0.9rem;
             color: #4b6079;
-            margin: 0.25rem 0 0.5rem 0;
+            margin: 0.3rem 0 0.5rem 0;
         }
 
         .entry-meta span {
             background: #f0f5fd;
-            padding: 0.2rem 0.8rem;
+            padding: 0.2rem 1rem;
             border-radius: 30px;
             display: inline-block;
         }
@@ -147,10 +146,20 @@
             left: 0;
         }
 
-        .badge-list {
+        .chip {
+            background: #dae6f5;
+            padding: 0.2rem 0.9rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-left: 0.5rem;
+            white-space: nowrap;
+        }
+
+        .badge-group {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem 0.7rem;
+            gap: 0.6rem 0.8rem;
             margin: 0.8rem 0 0.2rem;
         }
 
@@ -163,59 +172,51 @@
             font-weight: 500;
         }
 
-        .gpa-chip {
-            background: #dae6f5;
-            padding: 0.2rem 0.9rem;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            margin-left: 0.5rem;
-            white-space: nowrap;
-        }
-
+        /* no footer, no extra columns — everything plain */
         hr {
             border: none;
-            border-top: 1px dashed #bccfe3;
+            border-top: 1px dashed #b8cee6;
             margin: 1rem 0 1.8rem 0;
         }
 
-        .extra-note {
+        /* small highlight note (still inside main, not a footer) */
+        .note {
             background: #f4f9ff;
             border-left: 4px solid #1e4f7a;
             padding: 0.8rem 1.2rem;
             border-radius: 0 12px 12px 0;
-            margin-top: 1.5rem;
+            margin-top: 1.8rem;
             font-size: 0.9rem;
             color: #0b2a44;
         }
 
-        .extra-note strong {
+        .note strong {
             font-weight: 600;
         }
 
         @media (max-width: 550px) {
-            .header { padding: 1.5rem; }
-            .content { padding: 1.8rem; }
-            .contact-row { gap: 1rem; }
+            .top { padding: 1.5rem; }
+            .main { padding: 1.8rem; }
+            .contact { gap: 1rem; }
         }
     </style>
 </head>
 <body>
-    <div class="resume-card">
-        <!-- header block -->
-        <div class="header">
+    <div class="paper">
+        <!-- header – no change -->
+        <div class="top">
             <h1>WAN AMIRUL AFIQ WAN ALIAS</h1>
-            <div class="contact-row">
+            <div class="contact">
                 <span>📍 Bayan Lepas, Penang</span>
                 <span>📧 afiqaliasg@gmail.com</span>
                 <span>📞 +601161373478</span>
             </div>
         </div>
 
-        <!-- main content (single column) -->
-        <div class="content">
+        <!-- main single column – everything stacked, no left/right, footer intentionally omitted -->
+        <div class="main">
 
-            <!-- EDUCATION -->
+            <!-- 1. EDUCATION -->
             <div class="section">
                 <div class="section-title">EDUCATION</div>
 
@@ -223,9 +224,9 @@
                 <div class="entry">
                     <div class="entry-header">
                         <span>Universiti Teknologi MARA (Arau, Perlis)</span>
-                        <span class="gpa-chip">GPA: 3.98</span>
+                        <span class="chip">GPA: 3.98</span>
                     </div>
-                    <div class="entry-sub">Master of Cyber Security — Ongoing</div>
+                    <div class="entry-sub">Master of Cyber Security – Ongoing</div>
                     <div class="desc">
                         Project: Post‑Quantum Cryptography in IoT Analysis
                     </div>
@@ -235,7 +236,7 @@
                 <div class="entry">
                     <div class="entry-header">
                         <span>Universiti Teknologi MARA (Arau, Perlis)</span>
-                        <span class="gpa-chip">GPA: 3.61</span>
+                        <span class="chip">GPA: 3.61</span>
                     </div>
                     <div class="entry-sub">Bachelor of Computer Science (Hons.) Netcentric Computing</div>
                     <div class="entry-meta">
@@ -250,7 +251,7 @@
                 <div class="entry">
                     <div class="entry-header">
                         <span>Universiti Teknologi MARA (Dengkil, Selangor)</span>
-                        <span class="gpa-chip">GPA: 3.67</span>
+                        <span class="chip">GPA: 3.67</span>
                     </div>
                     <div class="entry-sub">Foundation in Science</div>
                     <div class="entry-meta">
@@ -259,15 +260,15 @@
                 </div>
             </div>
 
-            <!-- WORK EXPERIENCE -->
+            <!-- 2. WORK EXPERIENCE (all in one long list) -->
             <div class="section">
                 <div class="section-title">WORK EXPERIENCE</div>
 
-                <!-- Aivres -->
+                <!-- Aivres (current) -->
                 <div class="entry">
                     <div class="entry-header">
                         <span>Aivres Systems Inc</span>
-                        <span class="gpa-chip" style="background:#d4e0f0;">Jan 2026 – now</span>
+                        <span class="chip" style="background:#d4e0f0;">Jan 2026 – now</span>
                     </div>
                     <div class="entry-sub">BMC Engineer — Bayan Lepas, Penang</div>
                     <div class="desc">
@@ -282,7 +283,7 @@
                 <div class="entry">
                     <div class="entry-header">
                         <span>Quectel Wireless Solutions</span>
-                        <span class="gpa-chip" style="background:#d4e0f0;">Jan 2024 – Dec 2025</span>
+                        <span class="chip" style="background:#d4e0f0;">Jan 2024 – Dec 2025</span>
                     </div>
                     <div class="entry-sub">Linux Embedded Software Engineer — Bayan Lepas, Penang</div>
                     <div class="desc">
@@ -302,7 +303,7 @@
                 <div class="entry">
                     <div class="entry-header">
                         <span>Quectel Wireless Solutions</span>
-                        <span class="gpa-chip" style="background:#d4e0f0;">Sept – Dec 2023</span>
+                        <span class="chip" style="background:#d4e0f0;">Sept – Dec 2023</span>
                     </div>
                     <div class="entry-sub">Embedded Software Engineer Intern — Bayan Lepas, Penang</div>
                     <div class="desc">
@@ -319,7 +320,7 @@
                 <div class="entry">
                     <div class="entry-header">
                         <span>Malaysian Vaccine Support Volunteers (MyVac)</span>
-                        <span class="gpa-chip" style="background:#d4e0f0;">Aug – Oct 2021</span>
+                        <span class="chip" style="background:#d4e0f0;">Aug – Oct 2021</span>
                     </div>
                     <div class="entry-sub">Data Administrator — Bachok, Kelantan</div>
                     <div class="desc">
@@ -332,7 +333,7 @@
                 </div>
             </div>
 
-            <!-- VOLUNTEER / EXTRACURRICULAR / COURSES -->
+            <!-- 3. VOLUNTEER / EXTRACURRICULAR / COURSES (single column, no columns) -->
             <div class="section">
                 <div class="section-title">VOLUNTEER & ADDITIONAL EXPERIENCE</div>
 
@@ -360,7 +361,7 @@
                     </div>
                 </div>
 
-                <!-- Cisco IoT (two entries, slightly different dates) -->
+                <!-- Cisco IoT (Oct 2022) -->
                 <div class="entry">
                     <div class="entry-header">
                         <span>Cisco IoT Fundamentals: Connecting Things</span>
@@ -372,6 +373,7 @@
                     </div>
                 </div>
 
+                <!-- Cisco IoT (March 2022) -->
                 <div class="entry">
                     <div class="entry-header">
                         <span>Cisco IoT Fundamentals: Connecting Things</span>
@@ -395,46 +397,43 @@
                 </div>
             </div>
 
-            <!-- SKILLS & INTERESTS (with chips) -->
+            <!-- 4. SKILLS & INTERESTS (plain chips, no columns) -->
             <div class="section">
                 <div class="section-title">SKILLS & INTERESTS</div>
 
-                <div style="margin-bottom: 1rem;">
+                <div style="margin-bottom: 1.2rem;">
                     <div style="font-weight: 600; margin-bottom: 0.4rem; color:#0f3a5c;">Computer:</div>
-                    <div class="badge-list">
+                    <div class="badge-group">
                         <span class="badge">C++</span><span class="badge">C</span><span class="badge">HTML</span>
                         <span class="badge">CSS</span><span class="badge">JSON</span><span class="badge">Shell Script</span>
                         <span class="badge">PHP</span>
                     </div>
                 </div>
 
-                <div style="margin-bottom: 1rem;">
+                <div style="margin-bottom: 1.2rem;">
                     <div style="font-weight: 600; margin-bottom: 0.4rem; color:#0f3a5c;">Languages:</div>
-                    <div class="badge-list">
+                    <div class="badge-group">
                         <span class="badge">English</span><span class="badge">Malay</span>
                     </div>
                 </div>
 
                 <div>
                     <div style="font-weight: 600; margin-bottom: 0.4rem; color:#0f3a5c;">Interests:</div>
-                    <div class="badge-list">
+                    <div class="badge-group">
                         <span class="badge">Penetration Testing</span>
                         <span class="badge">Digital Forensics</span>
                     </div>
                 </div>
             </div>
 
-            <!-- extra highlights / footer-like summary (as in original pdf flavour) -->
-            <div class="extra-note">
-                <strong>⚙️ Embedded expertise:</strong> RTOS (threads, mutexes, semaphores), I2C, SPI, UART, USB, PHY, Yocto, OpenWRT, debugging tools (oscilloscope, logic analyzer). <br>
-                <strong>📌 Highlights:</strong> 60 documents prepared · 50 tickets solved · 3× appreciation · GPA 3.98 (Master)
+            <!-- A tiny highlight block – still inside main, NOT a footer (just a natural end) -->
+            <div class="note">
+                <strong>⚙️ Embedded depth:</strong> RTOS (threads, mutexes, semaphores), I2C, SPI, UART, USB, PHY, Yocto, OpenWRT, debugging tools (oscilloscope, logic analyzer).<br>
+                <strong>📊 Key figures:</strong> 60 documents · 50 tickets solved · 3× appreciation · Master GPA 3.98
             </div>
 
-            <!-- subtle one‑page finish line (optional) -->
-            <div style="border-top: 2px solid #e2eaf5; margin-top: 1.8rem; padding-top: 0.6rem; text-align: right; font-size: 0.8rem; color: #6b7f9a;">
-                updated · one‑page format
-            </div>
-        </div> <!-- end content -->
-    </div> <!-- end resume-card -->
+            <!-- no footer line, no extra column, nothing else -->
+        </div> <!-- end main -->
+    </div> <!-- end paper -->
 </body>
 </html>
