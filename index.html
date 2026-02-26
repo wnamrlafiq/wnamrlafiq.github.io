@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wan Amirul Afiq · resume (one page)</title>
-    <!-- Font & reset for clean print-like style -->
+    <title>Wan Amirul Afiq · resume (single column)</title>
+    <!-- Professional single‑column layout, clean sans‑serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
@@ -16,228 +16,193 @@
         }
 
         body {
-            background: #e2e6ea;
+            background: #d9e0e9;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             min-height: 100vh;
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
             padding: 2rem 1rem;
-            line-height: 1.45;
+            line-height: 1.5;
         }
 
-        /* one‑page card */
-        .resume {
-            max-width: 980px;
+        .resume-card {
+            max-width: 860px;
             width: 100%;
             background: white;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.07);
-            border-radius: 6px;
+            border-radius: 8px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
         }
 
-        /* header section (title + contact) */
+        /* header section */
         .header {
-            background: #0f2a44;
+            background: #0e2a41;
             color: white;
-            padding: 1.8rem 2.2rem 1.4rem 2.2rem;
+            padding: 2rem 2.5rem 1.5rem 2.5rem;
         }
 
         .header h1 {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             font-weight: 600;
             letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
             line-height: 1.2;
-            margin-bottom: 0.4rem;
         }
 
         .contact-row {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.8rem;
-            font-size: 0.95rem;
-            font-weight: 400;
-            color: #e0edff;
-            margin-top: 0.25rem;
+            gap: 2rem;
+            font-size: 1rem;
+            color: #d0e2ff;
+            margin-top: 0.3rem;
         }
 
         .contact-row span {
-            display: flex;
+            display: inline-flex;
             align-items: center;
             gap: 6px;
         }
 
-        .contact-row i { font-style: normal; opacity: 0.8; }
-
-        /* main 2‑column layout */
-        .columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            padding: 2rem 2rem 1.8rem 2rem;
+        /* main content */
+        .content {
+            padding: 2.2rem 2.5rem 2rem 2.5rem;
         }
 
-        /* left / right base */
         .section {
-            margin-bottom: 1.8rem;
+            margin-bottom: 2.2rem;
         }
 
         .section-title {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #1e3a5f;
-            border-bottom: 2px solid #d0ddee;
-            padding-bottom: 0.3rem;
-            margin-bottom: 1.2rem;
+            color: #0e2a41;
+            border-bottom: 3px solid #c1d4ec;
+            padding-bottom: 0.25rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.3px;
         }
 
-        /* education & work cards */
+        /* entries */
         .entry {
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
         }
 
         .entry-header {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: baseline;
-            flex-wrap: wrap;
             font-weight: 600;
-            font-size: 1rem;
-            color: #0a1c2f;
-            margin-bottom: 0.2rem;
-        }
-
-        .entry-title {
-            font-size: 1.05rem;
+            font-size: 1.15rem;
+            color: #0a253b;
+            margin-bottom: 0.15rem;
         }
 
         .entry-sub {
-            font-weight: 500;
-            color: #2b4b74;
-            margin-bottom: 0.2rem;
+            font-weight: 600;
+            color: #1f4a7a;
+            font-size: 1rem;
+            margin: 0.15rem 0 0.1rem;
         }
 
         .entry-meta {
-            font-weight: 400;
-            color: #4a5f7a;
-            font-size: 0.85rem;
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin: 0.25rem 0 0.4rem 0;
+            gap: 1.2rem;
+            font-size: 0.9rem;
+            color: #4b6079;
+            margin: 0.25rem 0 0.5rem 0;
         }
 
-        .entry-meta span i {
-            font-style: normal;
-            background: #f0f4fb;
-            padding: 2px 6px;
-            border-radius: 12px;
+        .entry-meta span {
+            background: #f0f5fd;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            display: inline-block;
         }
 
         .desc {
-            font-size: 0.9rem;
-            color: #1f2b3a;
-            line-height: 1.5;
-            margin-top: 0.2rem;
-            padding-right: 0.3rem;
+            font-size: 0.95rem;
+            color: #1f2c3c;
         }
 
         .desc ul {
             list-style: none;
-            margin-top: 0.2rem;
+            margin-top: 0.3rem;
         }
 
         .desc li {
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.45rem;
+            padding-left: 1.3rem;
             position: relative;
-            padding-left: 1.2rem;
         }
 
         .desc li::before {
-            content: "•";
-            color: #1e3a5f;
+            content: "▹";
+            color: #1e4f7a;
             font-weight: 600;
-            font-size: 1.2rem;
             position: absolute;
             left: 0;
-            top: -0.2rem;
         }
 
-        .badge-light {
-            background: #ecf3fa;
-            color: #1d3a5c;
-            font-size: 0.75rem;
-            font-weight: 500;
-            padding: 0.2rem 0.7rem;
-            border-radius: 30px;
-            display: inline-block;
-            margin: 0.15rem 0.25rem 0.15rem 0;
-            white-space: nowrap;
-        }
-
-        /* small chips for skills / interests */
-        .skillset {
+        .badge-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem 0.4rem;
-            margin-top: 0.5rem;
+            gap: 0.5rem 0.7rem;
+            margin: 0.8rem 0 0.2rem;
         }
 
-        .skill-item {
-            background: #eef2f7;
-            padding: 0.3rem 1rem;
-            border-radius: 30px;
-            font-size: 0.85rem;
+        .badge {
+            background: #e7eef9;
+            color: #0f3a5c;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
             font-weight: 500;
-            color: #102b44;
         }
 
-        .interest-item {
-            background: #e3eaf3;
-            padding: 0.3rem 1rem;
+        .gpa-chip {
+            background: #dae6f5;
+            padding: 0.2rem 0.9rem;
             border-radius: 30px;
-            font-size: 0.85rem;
-            font-weight: 500; 
-            color: #0a2a4a;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-left: 0.5rem;
+            white-space: nowrap;
         }
 
         hr {
             border: none;
-            border-top: 1px dashed #cbd6e6;
-            margin: 0.5rem 0 1.2rem 0;
+            border-top: 1px dashed #bccfe3;
+            margin: 1rem 0 1.8rem 0;
         }
 
-        /* micro spacing */
-        .text-small {
-            font-size: 0.85rem;
+        .extra-note {
+            background: #f4f9ff;
+            border-left: 4px solid #1e4f7a;
+            padding: 0.8rem 1.2rem;
+            border-radius: 0 12px 12px 0;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #0b2a44;
         }
 
-        .gpa-badge {
-            background: #dfe8f4;
-            border-radius: 12px;
-            padding: 2px 8px;
-            font-weight: 500;
-            font-size: 0.8rem;
-            margin-left: 8px;
+        .extra-note strong {
+            font-weight: 600;
         }
 
-        /* ensure right column also consistent */
-        @media (max-width: 700px) {
-            .columns { grid-template-columns: 1fr; gap: 0.5rem; }
-            .header h1 { font-size: 1.8rem; }
+        @media (max-width: 550px) {
+            .header { padding: 1.5rem; }
+            .content { padding: 1.8rem; }
+            .contact-row { gap: 1rem; }
         }
-
-        /* extra polish */
-        .inline-icon { opacity: 0.7; margin-right: 3px; }
     </style>
 </head>
 <body>
-    <div class="resume">
-        <!-- header with name + contact -->
+    <div class="resume-card">
+        <!-- header block -->
         <div class="header">
             <h1>WAN AMIRUL AFIQ WAN ALIAS</h1>
             <div class="contact-row">
@@ -247,244 +212,229 @@
             </div>
         </div>
 
-        <!-- two columns (left: education, work; right: work continued, extra, skills) -->
-        <div class="columns">
-            <!-- LEFT COLUMN -->
-            <div class="left-col">
+        <!-- main content (single column) -->
+        <div class="content">
 
-                <!-- EDUCATION -->
-                <div class="section">
-                    <div class="section-title">EDUCATION</div>
+            <!-- EDUCATION -->
+            <div class="section">
+                <div class="section-title">EDUCATION</div>
 
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Universiti Teknologi MARA</span>
-                            <span class="gpa-badge">GPA:3.98</span>
-                        </div>
-                        <div class="entry-sub">Master of Cyber Security – Ongoing</div>
-                        <div class="entry-meta">
-                            <span>Arau, Perlis</span>
-                        </div>
-                        <div class="desc">
-                            Project: Post‑Quantum Cryptography in IoT Analysis
-                        </div>
+                <!-- Master -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Universiti Teknologi MARA (Arau, Perlis)</span>
+                        <span class="gpa-chip">GPA: 3.98</span>
                     </div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Universiti Teknologi MARA</span>
-                            <span class="gpa-badge">GPA:3.61</span>
-                        </div>
-                        <div class="entry-sub">Bachelor of Computer Science (Hons.) Netcentric Computing</div>
-                        <div class="entry-meta">
-                            <span>Arau, Perlis</span>
-                            <span>January 2024</span>
-                        </div>
-                        <div class="desc">
-                            Final Year Project: Web Development using Laravel MVC and Flutter
-                        </div>
-                    </div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Universiti Teknologi MARA</span>
-                            <span class="gpa-badge">GPA:3.67</span>
-                        </div>
-                        <div class="entry-sub">Foundation in Science</div>
-                        <div class="entry-meta">
-                            <span>Dengkil, Selangor</span>
-                            <span>April 2020</span>
-                        </div>
+                    <div class="entry-sub">Master of Cyber Security — Ongoing</div>
+                    <div class="desc">
+                        Project: Post‑Quantum Cryptography in IoT Analysis
                     </div>
                 </div>
 
-                <!-- WORK EXPERIENCE (first two roles) -->
-                <div class="section">
-                    <div class="section-title">WORK EXPERIENCE</div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Aivres Systems Inc</span>
-                        </div>
-                        <div class="entry-sub">BMC Engineer</div>
-                        <div class="entry-meta">
-                            <span>Bayan Lepas, Penang</span>
-                            <span>Jan 2026 – now</span>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Hardware and software adaptation of BMC models in AI servers.</li>
-                                <li>Develop and implement customised customer requirements and provide support.</li>
-                            </ul>
-                        </div>
+                <!-- Bachelor -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Universiti Teknologi MARA (Arau, Perlis)</span>
+                        <span class="gpa-chip">GPA: 3.61</span>
                     </div>
+                    <div class="entry-sub">Bachelor of Computer Science (Hons.) Netcentric Computing</div>
+                    <div class="entry-meta">
+                        <span>January 2024</span>
+                    </div>
+                    <div class="desc">
+                        Final Year Project: Web Development using Laravel MVC and Flutter
+                    </div>
+                </div>
 
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Quectel Wireless Solutions</span>
-                        </div>
-                        <div class="entry-sub">Linux Embedded Software Engineer</div>
-                        <div class="entry-meta">
-                            <span>Bayan Lepas, Penang</span>
-                            <span>Jan 2024 – Dec 2025</span>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Assistant engineer & maintenance under embedded Linux platform.</li>
-                                <li>Prepared 60 documents for software functions on cellular modules.</li>
-                                <li>Solved all 50 tickets assigned periodically (JIRA) – global cellular module issues.</li>
-                                <li>OpenWRT on Mediatek 5G & Yocto on Qualcomm LTE; used C, shell, Python.</li>
-                                <li>Embedded C firmware, RTOS (threads, mutexes, semaphores, deadlocks).</li>
-                                <li>Industrial protocols: I2C, SPI, UART, USB, PHY; hardware debugging (oscilloscope, multimeter, logic analyzer).</li>
-                                <li>Gained appreciation 3 times for significant performance.</li>
-                            </ul>
-                        </div>
+                <!-- Foundation -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Universiti Teknologi MARA (Dengkil, Selangor)</span>
+                        <span class="gpa-chip">GPA: 3.67</span>
+                    </div>
+                    <div class="entry-sub">Foundation in Science</div>
+                    <div class="entry-meta">
+                        <span>April 2020</span>
                     </div>
                 </div>
             </div>
 
-            <!-- RIGHT COLUMN -->
-            <div class="right-col">
+            <!-- WORK EXPERIENCE -->
+            <div class="section">
+                <div class="section-title">WORK EXPERIENCE</div>
 
-                <!-- WORK EXPERIENCE (continued) -->
-                <div class="section">
-                    <!-- title already on left, but we keep consistent layout -->
-                    <div class="section-title" style="visibility: hidden; height: 1.1rem;"> </div> 
-                    <!-- Quectel Intern -->
-                    <div class="entry" style="margin-top: 0;">
-                        <div class="entry-header">
-                            <span class="entry-title">Quectel Wireless Solutions</span>
-                        </div>
-                        <div class="entry-sub">Embedded Software Engineer Intern</div>
-                        <div class="entry-meta">
-                            <span>Bayan Lepas, Penang</span>
-                            <span>Sept – Dec 2023</span>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Software development & maintenance under embedded Linux.</li>
-                                <li>Shell scripting, embedded C, AT commands, IPC, documentation.</li>
-                                <li>Write software testing programs, customer support via JIRA.</li>
-                                <li>Focused on Yocto framework on Qualcomm platform issues internally.</li>
-                            </ul>
-                        </div>
+                <!-- Aivres -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Aivres Systems Inc</span>
+                        <span class="gpa-chip" style="background:#d4e0f0;">Jan 2026 – now</span>
                     </div>
-
-                    <!-- MyVac -->
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Malaysian Vaccine Support Volunteers (MyVac)</span>
-                        </div>
-                        <div class="entry-sub">Data Administrator</div>
-                        <div class="entry-meta">
-                            <span>Bachok, Kelantan</span>
-                            <span>Aug – Oct 2021</span>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>Collected & managed data of hundreds of patients into PICK database daily.</li>
-                                <li>Managed 500 data sets weekly for weekly report.</li>
-                                <li>Analyzed thousands of patient data for Ministry of Health.</li>
-                            </ul>
-                        </div>
+                    <div class="entry-sub">BMC Engineer — Bayan Lepas, Penang</div>
+                    <div class="desc">
+                        <ul>
+                            <li>Hardware and software adaptation of various BMC models in AI servers.</li>
+                            <li>Develop and implement customized requirements for customers; provide support.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- ORGANIZATIONS / VOLUNTEER (Google, Cisco, etc) -->
-                <div class="section">
-                    <div class="section-title">VOLUNTEER & EXTRACURRICULAR</div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Google Developer Students Club (GDSC)</span>
-                        </div>
-                        <div class="entry-sub">Member</div>
-                        <div class="entry-meta"><span>Online Club since Oct 2022</span></div>
-                        <div class="desc">Workshops in Georgetown, Penang – web and app development insights.</div>
+                <!-- Quectel full time -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Quectel Wireless Solutions</span>
+                        <span class="gpa-chip" style="background:#d4e0f0;">Jan 2024 – Dec 2025</span>
                     </div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Google Cybersecurity</span>
-                        </div>
-                        <div class="entry-sub">Participant</div>
-                        <div class="entry-meta"><span>Online Course May 2024</span></div>
-                        <div class="desc">Foundations of Cybersecurity · Play It Safe: Manage Security Risks · Connect and Protect: Networks and Network Security</div>
-                    </div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Cisco IoT Fundamentals: Connecting Things</span>
-                        </div>
-                        <div class="entry-sub">Participant</div>
-                        <div class="entry-meta"><span>Online Course Oct 2022</span></div>
-                        <div class="desc">IoT, sensors, actuators, Arduino, Python, Cisco PL-App, Raspberry Pi; role of Fog Computing.</div>
-                    </div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Cisco IoT Fundamentals: Connecting Things</span>
-                        </div>
-                        <div class="entry-sub">Participant</div>
-                        <div class="entry-meta"><span>Online Course March 2022</span></div>
-                        <div class="desc">IP addressing, Ethernet, switches/routers, 54 labs (14h hands‑on) using Cisco Packet Tracer.</div>
-                    </div>
-
-                    <div class="entry">
-                        <div class="entry-header">
-                            <span class="entry-title">Motivational Program: Towards Academic And Character Excellence</span>
-                        </div>
-                        <div class="entry-sub">Speaker</div>
-                        <div class="desc">Talk to Form 5 SPM candidates (SMA Nurul Islam) – motivated students for exams.</div>
+                    <div class="entry-sub">Linux Embedded Software Engineer — Bayan Lepas, Penang</div>
+                    <div class="desc">
+                        <ul>
+                            <li>Assistant engineer & maintenance under embedded Linux platform.</li>
+                            <li>Prepared 60 documents for software functions on cellular modules.</li>
+                            <li>Solved all 50 tickets assigned periodically (JIRA) – global customer support for cellular module issues in APAC & Europe.</li>
+                            <li>OpenWRT on Mediatek 5G & Yocto on Qualcomm LTE platforms; used C, shell scripting, Python.</li>
+                            <li>Embedded C firmware for microcontrollers, RTOS (threads, mutexes, semaphores, deadlocks).</li>
+                            <li>Industrial protocols: I2C, SPI, UART, USB, PHY; hardware debugging (oscilloscope, multimeter, logic analyzer).</li>
+                            <li>Gained appreciation 3 times for significant performance.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- SKILLS & INTERESTS -->
-                <div class="section">
-                    <div class="section-title">SKILLS & INTERESTS</div>
-                    <div style="margin-bottom: 0.8rem;">
-                        <div style="font-weight: 500; font-size:0.9rem; color:#1f3a5e;">Computer:</div>
-                        <div class="skillset">
-                            <span class="skill-item">C++</span>
-                            <span class="skill-item">C</span>
-                            <span class="skill-item">HTML</span>
-                            <span class="skill-item">CSS</span>
-                            <span class="skill-item">JSON</span>
-                            <span class="skill-item">Shell Script</span>
-                            <span class="skill-item">PHP</span>
-                        </div>
+                <!-- Quectel Intern -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Quectel Wireless Solutions</span>
+                        <span class="gpa-chip" style="background:#d4e0f0;">Sept – Dec 2023</span>
                     </div>
-                    <div style="margin-bottom: 0.8rem;">
-                        <div style="font-weight: 500; font-size:0.9rem; color:#1f3a5e;">Languages:</div>
-                        <div class="skillset">
-                            <span class="skill-item">English</span>
-                            <span class="skill-item">Malay</span>
-                        </div>
+                    <div class="entry-sub">Embedded Software Engineer Intern — Bayan Lepas, Penang</div>
+                    <div class="desc">
+                        <ul>
+                            <li>Software development & maintenance under embedded Linux platform.</li>
+                            <li>Shell scripting, embedded C, AT commands, IPC, documentation.</li>
+                            <li>Wrote software testing programs; customer support via JIRA for global cellular module issues.</li>
+                            <li>Focused on Yocto framework on Qualcomm platform issues internally.</li>
+                        </ul>
                     </div>
-                    <div>
-                        <div style="font-weight: 500; font-size:0.9rem; color:#1f3a5e;">Interests:</div>
-                        <div class="skillset">
-                            <span class="interest-item">Penetration Testing</span>
-                            <span class="interest-item">Digital Forensics</span>
-                        </div>
-                    </div>
-
-                    <!-- small extra: original PDF had some inline mentions like "Gained appreciation" etc already covered -->
                 </div>
 
-                <!-- subtle extra line for certifications (already in desc, but we add a tiny summary if needed) -->
-                <div style="margin-top: 0.8rem; font-size:0.8rem; color:#446688; border-left: 3px solid #cfdef5; padding-left: 0.8rem;">
-                    ⚙️ Embedded: RTOS, I2C/SPI/UART, Yocto, OpenWRT, debugging tools.
+                <!-- MyVac -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Malaysian Vaccine Support Volunteers (MyVac)</span>
+                        <span class="gpa-chip" style="background:#d4e0f0;">Aug – Oct 2021</span>
+                    </div>
+                    <div class="entry-sub">Data Administrator — Bachok, Kelantan</div>
+                    <div class="desc">
+                        <ul>
+                            <li>Collected & managed data of hundreds of patients into National COVID‑19 Immunization Program (PICK) database daily.</li>
+                            <li>Managed 500 data sets weekly for weekly report.</li>
+                            <li>Analyzed thousands of patient data to be reported to Ministry of Health.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- subtle footer line (optional) -->
-        <div style="border-top: 1px solid #e0e8f0; padding: 0.6rem 2rem; background: #f9fcff; font-size:0.8rem; color:#4a6382; display: flex; flex-wrap: wrap; gap: 1.5rem;">
-            <span>🏆 3× appreciation Quectel</span>
-            <span>📄 60 documents, 50 tickets solved</span>
-            <span>🐧 Linux embedded · C · Python</span>
-        </div>
-    </div>
+            <!-- VOLUNTEER / EXTRACURRICULAR / COURSES -->
+            <div class="section">
+                <div class="section-title">VOLUNTEER & ADDITIONAL EXPERIENCE</div>
+
+                <!-- GDSC -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Google Developer Students Club (GDSC)</span>
+                    </div>
+                    <div class="entry-sub">Member</div>
+                    <div class="entry-meta"><span>Online Club since Oct 2022</span></div>
+                    <div class="desc">
+                        Participated in workshops in Georgetown, Penang – gained insights to web and app development.
+                    </div>
+                </div>
+
+                <!-- Google Cybersecurity -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Google Cybersecurity</span>
+                    </div>
+                    <div class="entry-sub">Participant</div>
+                    <div class="entry-meta"><span>Online Course May 2024</span></div>
+                    <div class="desc">
+                        Foundations of Cybersecurity · Play It Safe: Manage Security Risks · Connect and Protect: Networks and Network Security
+                    </div>
+                </div>
+
+                <!-- Cisco IoT (two entries, slightly different dates) -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Cisco IoT Fundamentals: Connecting Things</span>
+                    </div>
+                    <div class="entry-sub">Participant</div>
+                    <div class="entry-meta"><span>Online Course Oct 2022</span></div>
+                    <div class="desc">
+                        IoT, sensors, actuators, microcontrollers (Arduino), Python, Cisco PL-App, Raspberry Pi; role of Fog Computing in IoT solutions.
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Cisco IoT Fundamentals: Connecting Things</span>
+                    </div>
+                    <div class="entry-sub">Participant</div>
+                    <div class="entry-meta"><span>Online Course March 2022</span></div>
+                    <div class="desc">
+                        IP addressing, physical/data link protocols, Ethernet, switches/routers. Completed 54 labs (14h hands‑on) using Cisco Packet Tracer.
+                    </div>
+                </div>
+
+                <!-- Motivational Speaker -->
+                <div class="entry">
+                    <div class="entry-header">
+                        <span>Motivational Program: Towards Academic And Character Excellence</span>
+                    </div>
+                    <div class="entry-sub">Speaker</div>
+                    <div class="desc">
+                        Gave a talk to Form 5 SPM candidates from SMA Nurul Islam – successfully motivated students for exams.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SKILLS & INTERESTS (with chips) -->
+            <div class="section">
+                <div class="section-title">SKILLS & INTERESTS</div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="font-weight: 600; margin-bottom: 0.4rem; color:#0f3a5c;">Computer:</div>
+                    <div class="badge-list">
+                        <span class="badge">C++</span><span class="badge">C</span><span class="badge">HTML</span>
+                        <span class="badge">CSS</span><span class="badge">JSON</span><span class="badge">Shell Script</span>
+                        <span class="badge">PHP</span>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <div style="font-weight: 600; margin-bottom: 0.4rem; color:#0f3a5c;">Languages:</div>
+                    <div class="badge-list">
+                        <span class="badge">English</span><span class="badge">Malay</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div style="font-weight: 600; margin-bottom: 0.4rem; color:#0f3a5c;">Interests:</div>
+                    <div class="badge-list">
+                        <span class="badge">Penetration Testing</span>
+                        <span class="badge">Digital Forensics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- extra highlights / footer-like summary (as in original pdf flavour) -->
+            <div class="extra-note">
+                <strong>⚙️ Embedded expertise:</strong> RTOS (threads, mutexes, semaphores), I2C, SPI, UART, USB, PHY, Yocto, OpenWRT, debugging tools (oscilloscope, logic analyzer). <br>
+                <strong>📌 Highlights:</strong> 60 documents prepared · 50 tickets solved · 3× appreciation · GPA 3.98 (Master)
+            </div>
+
+            <!-- subtle one‑page finish line (optional) -->
+            <div style="border-top: 2px solid #e2eaf5; margin-top: 1.8rem; padding-top: 0.6rem; text-align: right; font-size: 0.8rem; color: #6b7f9a;">
+                updated · one‑page format
+            </div>
+        </div> <!-- end content -->
+    </div> <!-- end resume-card -->
 </body>
 </html>
